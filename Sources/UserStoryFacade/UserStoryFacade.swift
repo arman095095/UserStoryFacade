@@ -5,6 +5,7 @@ import SettingsRouteMap
 import AccountRouteMap
 import AuthorizationRouteMap
 import SelectionRouteMap
+import AuthorizedZoneRouteMap
 
 public final class UserStoryFacade {
     public init() { }
@@ -14,4 +15,5 @@ public final class UserStoryFacade {
     public var authorizationUserStory: AuthorizationRouteMap?
     public var accountUserStory: AccountRouteMap?
     public var regionUserStory: RegionSelectionRouteMap?
+    public var authorizedZoneUserStory: AuthorizedZoneRouteMap?
 }
