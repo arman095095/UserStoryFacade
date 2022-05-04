@@ -4,13 +4,21 @@
 import PackageDescription
 
 private let remoteDependencies: [Package.Dependency] = [
-    
+    .package(url: "https://github.com/arman095095/SettingsRouteMap.git", branch: "develop"),
+    .package(url: "https://github.com/arman095095/PostsRouteMap.git", branch: "develop"),
+    .package(url: "https://github.com/arman095095/ProfileRouteMap.git", branch: "develop"),
+    .package(url: "https://github.com/arman095095/AuthorizationRouteMap.git", branch: "develop"),
+    .package(url: "https://github.com/arman095095/SelectionRouteMap.git", branch: "develop"),
+    .package(url: "https://github.com/arman095095/AccountRouteMap.git", branch: "develop")
 ]
 
 private let localDependencies: [Package.Dependency] = [
     .package(path: "/Users/armancarhcan/Desktop/Workdir/SettingsRouteMap"),
     .package(path: "/Users/armancarhcan/Desktop/Workdir/PostsRouteMap"),
     .package(path: "/Users/armancarhcan/Desktop/Workdir/ProfileRouteMap"),
+    .package(path: "/Users/armancarhcan/Desktop/Workdir/AuthorizationRouteMap"),
+    .package(path: "/Users/armancarhcan/Desktop/Workdir/SelectionRouteMap"),
+    .package(path: "/Users/armancarhcan/Desktop/Workdir/AccountRouteMap")
 ]
 
 let isDev = true
@@ -34,6 +42,9 @@ let package = Package(
             dependencies: [.product(name: "SettingsRouteMap", package: "SettingsRouteMap"),
                            .product(name: "PostsRouteMap", package: "PostsRouteMap"),
                            .product(name: "ProfileRouteMap", package: "ProfileRouteMap"),
+                           .product(name: "AuthorizationRouteMap", package: "AuthorizationRouteMap"),
+                           .product(name: "SelectionRouteMap", package: "SelectionRouteMap"),
+                           .product(name: "AccountRouteMap", package: "AccountRouteMap")
                            ]),
     ]
 )
