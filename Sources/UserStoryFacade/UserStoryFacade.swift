@@ -6,6 +6,7 @@ import AccountRouteMap
 import AuthorizationRouteMap
 import SelectionRouteMap
 import AuthorizedZoneRouteMap
+import ChatsRouteMap
 
 public protocol UserStoryFacadeProtocol: AnyObject {
     var postsUserStory: PostsRouteMap? { set get }
@@ -15,6 +16,7 @@ public protocol UserStoryFacadeProtocol: AnyObject {
     var accountUserStory: AccountRouteMap? { set get }
     var regionUserStory: RegionSelectionRouteMap? { set get }
     var authorizedZoneUserStory: AuthorizedZoneRouteMap? { set get }
+    var chatsUserStory: ChatsRouteMap? { set get }
 }
 
 public final class UserStoryFacade: UserStoryFacadeProtocol {
@@ -26,6 +28,7 @@ public final class UserStoryFacade: UserStoryFacadeProtocol {
     public var profileUserStory: ProfileRouteMap?
     public var settingsUserStory: SettingsRouteMap?
     public var authorizedZoneUserStory: AuthorizedZoneRouteMap?
+    public var chatsUserStory: ChatsRouteMap?
 
     public init() { }
 }
