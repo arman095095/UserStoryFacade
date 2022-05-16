@@ -12,7 +12,6 @@ private let dependencies: [Package.Dependency] = [
     .package(url: "https://github.com/arman095095/AccountRouteMap.git", branch: "develop"),
     .package(url: "https://github.com/arman095095/AuthorizedZoneRouteMap.git", branch: "develop"),
     .package(url: "https://github.com/arman095095/ChatsRouteMap.git", branch: "develop"),
-    .package(url: "https://github.com/arman095095/MessangerRouteMap.git", branch: "develop")
 ]
 
 let package = Package(
@@ -38,7 +37,6 @@ let package = Package(
                            .product(name: "AccountRouteMap", package: "AccountRouteMap"),
                            .product(name: "AuthorizedZoneRouteMap", package: "AuthorizedZoneRouteMap"),
                            .product(name: "ChatsRouteMap", package: "ChatsRouteMap"),
-                           .product(name: "MessangerRouteMap", package: "MessangerRouteMap")
                            ]),
     ]
 )
