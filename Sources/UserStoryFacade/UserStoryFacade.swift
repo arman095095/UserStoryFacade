@@ -9,26 +9,26 @@ import AuthorizedZoneRouteMap
 import ChatsRouteMap
 
 public protocol UserStoryFacadeProtocol: AnyObject {
-    var postsUserStory: PostsRouteMap? { set get }
-    var profileUserStory: ProfileRouteMap? { set get }
-    var settingsUserStory: SettingsRouteMap? { set get }
-    var authorizationUserStory: AuthorizationRouteMap? { set get }
-    var accountUserStory: AccountRouteMap? { set get }
-    var regionUserStory: RegionSelectionRouteMap? { set get }
-    var authorizedZoneUserStory: AuthorizedZoneRouteMap? { set get }
-    var chatsUserStory: ChatsRouteMap? { set get }
+    var posts: PostsRouteMap? { set get }
+    var profile: ProfileRouteMap? { set get }
+    var settings: SettingsRouteMap? { set get }
+    var authorization: AuthorizationRouteMap? { set get }
+    var account: AccountRouteMap? { set get }
+    var regionSelection: RegionSelectionRouteMap? { set get }
+    var authorizedZone: AuthorizedZoneRouteMap? { set get }
+    var chats: ChatsRouteMap? { set get }
 }
 
 public final class UserStoryFacade: UserStoryFacadeProtocol {
     
-    public var authorizationUserStory: AuthorizationRouteMap?
-    public var accountUserStory: AccountRouteMap?
-    public var regionUserStory: RegionSelectionRouteMap?
-    public var postsUserStory: PostsRouteMap?
-    public var profileUserStory: ProfileRouteMap?
-    public var settingsUserStory: SettingsRouteMap?
-    public var authorizedZoneUserStory: AuthorizedZoneRouteMap?
-    public var chatsUserStory: ChatsRouteMap?
+    public var authorization: AuthorizationRouteMap?
+    public var account: AccountRouteMap?
+    public var regionSelection: RegionSelectionRouteMap?
+    public var posts: PostsRouteMap?
+    public var profile: ProfileRouteMap?
+    public var settings: SettingsRouteMap?
+    public var authorizedZone: AuthorizedZoneRouteMap?
+    public var chats: ChatsRouteMap?
 
     public init() { }
 }
