@@ -7,6 +7,7 @@ import AuthorizationRouteMap
 import SelectionRouteMap
 import AuthorizedZoneRouteMap
 import ChatsRouteMap
+import ProfilesListRouteMap
 
 public protocol UserStoryFacadeProtocol: AnyObject {
     var posts: PostsRouteMap? { set get }
@@ -17,6 +18,7 @@ public protocol UserStoryFacadeProtocol: AnyObject {
     var regionSelection: RegionSelectionRouteMap? { set get }
     var authorizedZone: AuthorizedZoneRouteMap? { set get }
     var chats: ChatsRouteMap? { set get }
+    var profilesList: ProfilesListRouteMap? { get set }
 }
 
 public final class UserStoryFacade: UserStoryFacadeProtocol {
@@ -29,6 +31,7 @@ public final class UserStoryFacade: UserStoryFacadeProtocol {
     public var settings: SettingsRouteMap?
     public var authorizedZone: AuthorizedZoneRouteMap?
     public var chats: ChatsRouteMap?
+    public var profilesList: ProfilesListRouteMap?
 
     public init() { }
 }
